@@ -8,56 +8,74 @@ $(document).ready(function() {
     var food = $("select#food").val();
     var kids = $("select#kids").val();
 
-    if (activity === "layingOut" || activity === "shade") {
-      $("#coolKids").show();
+    if (activity === "skiing" && environment === "winter") {
+      $("#coolKids").hide();
       $("#dangerNoKids").hide();
-      $("#winter").hide();
+      $("#winter").show();
       $("#dessert").hide();
       $("#warmKids").hide();
       $("#hot").hide();
       console.log("activity: "+ activity);
-    } else if (age > 29) {
+    } else if (activity === "surfing" && environment === "warm" || environment === "Hot") {
+      $("#dangerNoKids").hide();
+      $("#winter").hide();
+      $("#coolKids").hide();
+      $("#desert").hide();
+      $("#warmKids").show();
+      $("#hot").show();
+    } else if (activity === "hiking" && environment === "warm") {
+      $("#dangerNoKids").hide();
+      $("#winter").hide();
+      $("#coolKids").hide();
+      $("#desert").hide();
+      $("#warmKids").show();
+      $("#hot").show();
+    } else if (activity === "hiking" && environment === "dessert") {
       $("#dangerNoKids").hide();
       $("#winter").hide();
       $("#coolKids").hide();
       $("#desert").show();
       $("#warmKids").hide();
       $("#hot").hide();
-      console.log("age: "+ activity);
+    } else if (age > 20 && kids === "no" && adventure === "5" || adventure === "4") {
+      $("#dangerNoKids").show();
+      $("#winter").hide();
+      $("#coolKids").hide();
+      $("#desert").hide();
+      $("#warmKids").hide();
+      $("#hot").hide();
     }
-      console.log("out of if: "+ activity);
-    // if (adventure === 5 || 4 || 3 && kids === "no") {
-    //   $("#dangerNoKids").show();
-    //   $("#winter").hide();
-    //   $("#coolKids").hide();
-    //   $("#dessert").hide();
-    //   $("#warmKids").hide();
-    //   $("#hot").hide();
-    // } else if (age >= 18 && kids === 'yes' && activity === 'shade' || 'layingOut' && environment === 'warm' || cool) {
+    // if (age < 15 && kids === "no" && environment === "Hot") {
     //   $("#dangerNoKids").hide();
     //   $("#winter").hide();
+    //   $("#coolKids").hide();
+    //   $("#desert").hide();
+    //   $("#warmKids").hide();
+    //   $("#hot").show();
+    // } else if (age < 15 && environment === "warm") {
+    //   $("#dangerNoKids").hide();
+    //   $("#winter").show();
     //   $("#coolKids").show();
-    //   $("#dessert").hide();
-    //   $("#warmKids").show();
+    //   $("#desert").hide();
+    //   $("#warmKids").hide();
     //   $("#hot").hide();
-    // } else
-    //   $("#coolKids").show();{
-    //   }
-//Below will be able to click a button and add an image of the vacation spot??
-    // $("button#green").click(function() {
-    //     $("body").removeClass();
-    //     $("body").addClass("green-background");
-    //   });
-// console.log(activity);
-
-// console.log(adventure);
-console.log(environment);
-console.log(food);
-console.log(kids);
-console.log(name);
-console.log(adventure);
-console.log(activity);
-console.log(age);
+    // } else if (age < 15 && environment === "dessert") {
+    //   $("#dangerNoKids").hide();
+    //   $("#winter").show();
+    //   $("#coolKids").show();
+    //   $("#desert").hide();
+    //   $("#warmKids").hide();
+    //   $("#hot").hide();
+    // }
+      console.log("age: "+ activity);
+      console.log("out of if: "+ activity);
+      console.log(environment);
+      console.log(food);
+      console.log(kids);
+      console.log(name);
+      console.log(adventure);
+      console.log(activity);
+      console.log(age);
 
 
     event.preventDefault();
