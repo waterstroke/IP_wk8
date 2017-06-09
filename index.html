@@ -12,6 +12,7 @@
       <div class="jumbatron">
         <h1>Just the right vacation spot for you</h1>
           <form id="vacation">
+            <h4>Lets get a little bit of information about you.</h4>
             <div class="form-group">
               <label for="name">Enter your name</label>
               <input id="name"type="text">
@@ -22,30 +23,67 @@
               <input id="age" type="text">
             </div>
           </div>
-            <div class="row">
+            <div>
+              <label for="adventure">How would you rate your adventurous side</label>
+              <select id="adventure">
+                 <option value="5">I love to jump out of planes</option>
+                 <option value="4">I would jump out of a plane</option>
+                 <option value="3">I could be convinced to jump out of a plane</option>
+                 <option value="2">I would jump out of a plane on a bet</option>
+                 <option value="1">Thats just stupid, NO jumping out of a plane</option>
+                 <option value="1">planes scare me, I need to be medicated for flying</option>
+                  <option value="0">I will NOT fly...ever</option>
+              </select>
+            </div>
+              <div>
+                <label for="activity">Which activity speaks to you?</label>
+                <select id="activity">
+                   <option value="skiing">skiing</option>
+                   <option value="surfing">surfing</option>
+                   <option value="hiking">hiking</option>
+                   <option value="biking">biking</option>
+                   <option value="layingOut">laying in the sun</option>
+                  <option value="shade">chilling in the shade</option>
+                </select>
+              </div>
+              <div>
+                <label for="environment">What kind of weather do you love the most?</label>
+                <select id="environment">
+                   <option value="winter">Winter wonderland</option>
+                   <option value="cool">Cool but comfortable</option>
+                   <option value="dessert">Dessert like conditions</option>
+                   <option value="warm">Warm and breezy</option>
+                   <option value="Hot">Hot but tollerable in the shade</option>
+                </select>
+              </div>
+              <div>
+                <label for="food">What kind of food fills your days with joy?</label>
+                <select id="food">
+                  <option value="everything">I love all food and food loves me</option>
+                  <option value="nothing">I am a picky eater</option>
+                  <option value="allergic">I'm allergic to everything</option>
+                  <option value="fruit">Exotic fruit</option>
+                  <option value="salad">Salad</option>
+                  <option value="tacos">Tacos</option>
+                  <option value="fish">Fish</option>
+                  <option value="redMeat">RedMeat</option>
+                  <option value="hummus">Hummus</option>
+                  <option value="pasta">Pasta</option>
+                </select>
+              </div>
+              <div>
+                <label for="kids">Do you have kids?</label>
+                <select id="kids">
+                   <option value="yes">Yes</option>
+                   <option value="no">No</option>
+                </select>
+              </div>
+
+            </div>
             <div class="space">
-              <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox1" value="option1"> cold
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox2" value="option2"> warm
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox3" value="option3"> hot
-              </label>
-            </div>
-          </div>
-            <div class="row">
-              <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox1" value="option1"> cold
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox2" value="option2"> warm
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox3" value="option3"> hot
-              </label>
-            </div>
             <div class="row">
               <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
             </div>
+            </div>
+  </body>
+</html>
