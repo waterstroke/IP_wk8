@@ -7,7 +7,7 @@ $(document).ready(function() {
     var environment = $("select#environment").val();
     var food = $("select#food").val();
     var kids = $("select#kids").val();
-
+    var email = $("select#email").val();
 
     if (environment === "winter" && activity === "skiing") {
       $("#coolKids").hide();
@@ -76,6 +76,13 @@ $(document).ready(function() {
       $("#warmKids").hide();
       $("#hot").show();
     }
+    if (email === "yes") {
+      $("#vacationWinner").show();
+    } else {
+      $("#vacationWinner").hide();
+    }
+
+    $(".name").text(name);
 
       console.log("age: "+ activity);
       console.log("out of if: "+ activity);
