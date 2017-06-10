@@ -8,6 +8,7 @@ $(document).ready(function() {
     var food = $("select#food").val();
     var kids = $("select#kids").val();
 
+
     if (environment === "winter" && activity === "skiing") {
       $("#coolKids").hide();
       $("#dangerNoKids").hide();

@@ -10,7 +10,7 @@ _I have created a site that asks you questions and directs you to a great vacati
 
 ## link to site on GitHub Pages
 
-https://waterstroke.github.io/project_bryant/
+https://waterstroke.github.io/IP_wk8/
 
 ## Support and contact details
 
