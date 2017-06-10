@@ -1,186 +1,178 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.2.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>The perfect vacation</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1><span style="color:grey;font-weight:bold">Just the <span style="color:#b30000"</span>right</span> vacation spot</span></h1>
-      <form id="vacation">
-        <div class="row">
-          <div class=col-md-5>
-            <h4>Lets get a little bit of information about you.</h4>
-          </div>
-        </div>
-
-
-        <div class="space">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" type="text">
-          </div>
-        </div>
-        <div class="space">
-          <div class=form-group>
-            <label for="age">Age</label>
-            <input id="age" type="text">
-          </div>
-        </div>
-        <div>
-          <div class="space">
-            <label for="adventure">How would you rate your adventurous side</label>
-            <select id="adventure">
-             <option value="1">Thats just stupid, NO jumping out of a plane</option>
-             <option value="1">planes scare me, I need to be medicated for flying</option>
-             <option value="0">I'm to young to jump without my parent</option>
-             <option value="5">I love to jump out of planes</option>
-             <option value="4">I would jump out of a plane</option>
-             <option value="3">I could be convinced to jump out of a plane</option>
-             <option value="2">I would jump out of a plane on a bet</option>
-          </select>
-          </div>
-        </div>
-        <div>
-          <div class="space">
-            <label for="activity">Which activity speaks to you?</label>
-            <select id="activity">
-             <option value="skiing">skiing</option>
-             <option value="surfing">surfing</option>
-             <option value="hiking">hiking</option>
-             <option value="biking">biking</option>
-             <option value="layingOut">laying in the sun</option>
-             <option value="shade">chilling in the shade</option>
-          </select>
-          </div>
-        </div>
-        <div>
-          <div class="space">
-            <div class=row>
-              <div class=col-md-5>
-                <label for="environment">What kind of weather do you love the most?</label>
-                <select id="environment">
-                 <option value="winter">Winter wonderland</option>
-                 <option value="cool">Cool but comfortable</option>
-                 <option value="desert">Desert like conditions</option>
-                 <option value="warm">Warm and breezy</option>
-                 <option value="hot">Hot but tollerable in the shade</option>
-                </select>
-                <br><br>
-                <div class=col-md-7>
-                  <img src="img/Camel-Palm-Trees-Silhouette-2400px.png">
-                </div>
-              </div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1><span style="color:grey;font-weight:bold">Just the <span style="color:#b30000"</span>right</span> vacation spot</span></h1>
+        <form id="vacation">
+          <div class="row">
+            <div class=col-md-5>
+              <h4>Lets get a little bit of information about you.</h4>
             </div>
           </div>
-        <div class="margin-in">
+
+
           <div class="space">
-            <label for="food">What kind of food fills your days with joy?</label>
-            <select id="food">
-            <option value="everything">I love all food and food loves me</option>
-            <option value="nothing">I am a picky eater</option>
-            <option value="allergic">I'm allergic to everything</option>
-            <option value="fruit">Exotic fruit</option>
-            <option value="salad">Salad</option>
-            <option value="tacos">Tacos</option>
-            <option value="fish">Fish</option>
-            <option value="redMeat">RedMeat</option>
-            <option value="hummus">Hummus</option>
-            <option value="pasta">Pasta</option>
-          </select>
-              </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text">
             </div>
-            <div class="margin-in">
-              <div class="space">
-                <div class=row>
-                  <div class=col-md-3>
-                    <label for="kids">Do you have kids?</label>
-                    <select id="kids">
-             <option value="yes">Yes</option>
-             <option value="no">No</option>
-          </select>
+          </div>
+          <div class="space">
+            <div class=form-group>
+              <label for="age">Age</label>
+              <input id="age" type="text">
+            </div>
+          </div>
+          <div>
+            <div class="space">
+              <label for="adventure">How would you rate your adventurous side</label>
+              <select id="adventure">
+               <option value="1">Thats just stupid, NO jumping out of a plane</option>
+               <option value="1">planes scare me, I need to be medicated for flying</option>
+               <option value="0">I'm to young to jump without my parent</option>
+               <option value="5">I love to jump out of planes</option>
+               <option value="4">I would jump out of a plane</option>
+               <option value="3">I could be convinced to jump out of a plane</option>
+               <option value="2">I would jump out of a plane on a bet</option>
+            </select>
+            </div>
+          </div>
+          <div>
+            <div class="space">
+              <label for="activity">Which activity speaks to you?</label>
+              <select id="activity">
+               <option value="skiing">skiing</option>
+               <option value="surfing">surfing</option>
+               <option value="hiking">hiking</option>
+               <option value="biking">biking</option>
+               <option value="layingOut">laying in the sun</option>
+               <option value="shade">chilling in the shade</option>
+            </select>
+            </div>
+          </div>
+          <div>
+            <div class="space">
+              <div class=row>
+                <div class=col-md-5>
+                  <label for="environment">What kind of weather do you love the most?</label>
+                  <select id="environment">
+                   <option value="winter">Winter wonderland</option>
+                   <option value="cool">Cool but comfortable</option>
+                   <option value="desert">Desert like conditions</option>
+                   <option value="warm">Warm and breezy</option>
+                   <option value="hot">Hot but tollerable in the shade</option>
+                  </select>
+                  <br><br>
+                  <div class=col-md-7>
+                    <img src="img/Camel-Palm-Trees-Silhouette-2400px.png">
                   </div>
                 </div>
               </div>
             </div>
+          <div class="margin-in">
             <div class="space">
-              <div class="row">
-                <button type="submit" class="btn btn-primary btn-lg btn-block"><strong>Vacation results</strong></button>
+              <label for="food">What kind of food fills your days with joy?</label>
+              <select id="food">
+              <option value="everything">I love all food and food loves me</option>
+              <option value="nothing">I am a picky eater</option>
+              <option value="allergic">I'm allergic to everything</option>
+              <option value="fruit">Exotic fruit</option>
+              <option value="salad">Salad</option>
+              <option value="tacos">Tacos</option>
+              <option value="fish">Fish</option>
+              <option value="redMeat">RedMeat</option>
+              <option value="hummus">Hummus</option>
+              <option value="pasta">Pasta</option>
+            </select>
+                </div>
               </div>
+              <div class="margin-in">
+                <div class="space">
+                  <div class=row>
+                    <div class=col-md-3>
+                      <label for="kids">Do you have kids?</label>
+                      <select id="kids">
+               <option value="yes">Yes</option>
+               <option value="no">No</option>
+            </select>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-      </form>
-      <div id="winter">
-        <h2>Winter</h2>
-        <p>You love the snow! Lets show you some great places to check out</a>
-        </p>
-        <div class="btn-group" role="group" aria-label="...">
-          <a href="http://travel.usnews.com/Whistler_Canada/" class="btn btn-default">Whistler</a>
-          <a href="http://cooperspur.com/" class="btn btn-default">Sledding</a>
-          <a href="http://www.vermont.com/" class="btn btn-default">Vermont</a>
+              <div class="space">
+                <div class="row">
+                  <button type="submit" class="btn btn-primary btn-lg btn-block"><strong>Vacation results</strong></button>
+                </div>
+                </div>
+              </div>
+        </form>
+        <div id="winter">
+          <h2>Winter</h2>
+          <p>You love the snow! Lets show you some great places to check out</a>
+          </p>
+          <div class="btn-group" role="group" aria-label="...">
+            <a href="http://travel.usnews.com/Whistler_Canada/" class="btn btn-default">Whistler</a>
+            <a href="http://cooperspur.com/" class="btn btn-default">Sledding</a>
+            <a href="http://www.vermont.com/" class="btn btn-default">Vermont</a>
+          </div>
         </div>
-      </div>
-      <div id="coolKids">
-        <h2>Cool</h2>
-        <p></p>
-        <div class="btn-group" role="group" aria-label="...">
-          <a href="http://www.visitseattle.org/" class="btn btn-default">Seattle</a>
-          <a href="http://whc.unesco.org/en/list/741/" class="btn btn-default">Lunenburg</a>
-          <a href="http://www.vermont.com/" class="btn btn-default">Vermont</a>
+        <div id="coolKids">
+          <h2>Cool</h2>
+          <p></p>
+          <div class="btn-group" role="group" aria-label="...">
+            <a href="http://www.visitseattle.org/" class="btn btn-default">Seattle</a>
+            <a href="http://whc.unesco.org/en/list/741/" class="btn btn-default">Lunenburg</a>
+            <a href="http://www.vermont.com/" class="btn btn-default">Vermont</a>
+          </div>
         </div>
-      </div>
-      <div id="desert">
-        <h2>Desert</h2>
-        <p>These are some of the best spots to visit</p>
-        <div class="btn-group" role="group" aria-label="...">
-          <a href="https://wanderwisdom.com/travel-destinations/Sahara-Desert-Vacation-and-Tourist-Attractions" class="btn btn-default">Sahara</a>
-          <a href="http://www.discovermoab.com/" class="btn btn-default">Moab, Utah</a>
-          <a href="http://www.adventure-life.com/bolivia/tours/396/bolivia-backroads" class="btn btn-default">Bolivia</a>
+        <div id="desert">
+          <h2>Desert</h2>
+          <p>These are some of the best spots to visit</p>
+          <div class="btn-group" role="group" aria-label="...">
+            <a href="https://wanderwisdom.com/travel-destinations/Sahara-Desert-Vacation-and-Tourist-Attractions" class="btn btn-default">Sahara</a>
+            <a href="http://www.discovermoab.com/" class="btn btn-default">Moab, Utah</a>
+            <a href="http://www.adventure-life.com/bolivia/tours/396/bolivia-backroads" class="btn btn-default">Bolivia</a>
+          </div>
         </div>
-      </div>
-      <div id="warmKids">
-        <h2>Warm</h2>
-        <p>Finally, time to hang out with the kiddos and relax...kind of</p>
-        <div class="btn-group" role="group" aria-label="...">
-          <a href="https://disneyland.disney.go.com/" class="btn btn-default">DisneyLand Fun</a>
-          <a href="https://funbeach.com/" class="btn btn-default">Beach bums</a>
-          <a href="https://www.gohawaii.com/" class="btn btn-default">Snorkling</a>
-          <a href="https://www.nps.gov/acad/index.htm" class="btn btn-default">Hiking and camping</a>
+        <div id="warmKids">
+          <h2>Warm</h2>
+          <p>Finally, time to hang out with the kiddos and relax...kind of</p>
+          <div class="btn-group" role="group" aria-label="...">
+            <a href="https://disneyland.disney.go.com/" class="btn btn-default">DisneyLand Fun</a>
+            <a href="https://funbeach.com/" class="btn btn-default">Beach bums</a>
+            <a href="https://www.gohawaii.com/" class="btn btn-default">Snorkling</a>
+            <a href="https://www.nps.gov/acad/index.htm" class="btn btn-default">Hiking and camping</a>
+          </div>
         </div>
-      </div>
-      <div id="hot">
-        <h2>Hot</h2>
-        <p></p>
-        <div class="btn-group" role="group" aria-label="...">
-          <a href="http://www.discovermoab.com/" class="btn btn-default">Moab, Utah</a>
-          <a href="http://www.villasantacruzbaja.com/" class="btn btn-default">Santa Cruz</a>
-          <a href="http://www.travelandleisure.com/travel-guide/arizona" class="btn btn-default">Arizona</a>
-          <a href="http://www.newmexico.gov/" class="btn btn-default">New Mexico</a>
+        <div id="hot">
+          <h2>Hot</h2>
+          <p></p>
+          <div class="btn-group" role="group" aria-label="...">
+            <a href="http://www.discovermoab.com/" class="btn btn-default">Moab, Utah</a>
+            <a href="http://www.villasantacruzbaja.com/" class="btn btn-default">Santa Cruz</a>
+            <a href="http://www.travelandleisure.com/travel-guide/arizona" class="btn btn-default">Arizona</a>
+            <a href="http://www.newmexico.gov/" class="btn btn-default">New Mexico</a>
+          </div>
         </div>
-      </div>
-      <div id="dangerNoKids">
-        <h2>full of adventure, you may die! But what fun</h2>
-        <p></p>
-        <div class="btn-group" role="group" aria-label="...">
-          <a href="http://www.discovermoab.com/" class="btn btn-default">moab</a>
-          <a href="http://translate.google.com/translate?hl=en&sl=es&u=http://www.skiportillo.com/&ei=8MuZT5GxNNLy2gXr48i1Bw&sa=X&oi=translate&ct=result&resnum=1&ved=0CFMQ7gEwAA&prev=/search%3Fq%3DSki%2BPortillo%26hl%3Den%26client%3Dfirefox-a%26hs%3DZzs%26rls%3Dorg.mozilla:en-US:official%26prmd%3Dimvns"
-            class="btn btn-default">skiportillo</a>
-          <a href="http://www.grindtv.com/nature/4-dangerous-mountains-world/#cFdAIJGQ62I3VDyC.97" class="btn btn-default">Dangerous mountains</a>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-</body>
-
+        <div id="dangerNoKids">
+          <h2>full of adventure, you may die! But what fun</h2>
+          <p></p>
+          <div class="btn-group" role="group" aria-label="...">
+            <a href="http://www.discovermoab.com/" class="btn btn-default">moab</a>
+            <a href="http://translate.google.com/translate?hl=en&sl=es&u=http://www.skiportillo.com/&ei=8MuZT5GxNNLy2gXr48i1Bw&sa=X&oi=translate&ct=result&resnum=1&ved=0CFMQ7gEwAA&prev=/search%3Fq%3DSki%2BPortillo%26hl%3Den%26client%3Dfirefox-a%26hs%3DZzs%26rls%3Dorg.mozilla:en-US:official%26prmd%3Dimvns"
+              class="btn btn-default">skiportillo</a>
+            <a href="http://www.grindtv.com/nature/4-dangerous-mountains-world/#cFdAIJGQ62I3VDyC.97" class="btn btn-default">Dangerous mountains</a>
+          </div>
+         </div>
+       </div>
+     </div>
+ </body>
 </html>
