@@ -49,7 +49,7 @@ $(document).ready(function() {
     } else if (kids === "yes" && environment === "warm") {
       $("#dangerNoKids").hide();
       $("#winter").hide();
-      $("#coolKids").show();
+      $("#coolKids").hide();
       $("#desert").hide();
       $("#warmKids").show();
       $("#hot").hide();
@@ -76,28 +76,6 @@ $(document).ready(function() {
       $("#hot").show();
     }
 
-    // if (age < 15 && kids === "no" && environment === "Hot") {
-    //   $("#dangerNoKids").hide();
-    //   $("#winter").hide();
-    //   $("#coolKids").hide();
-    //   $("#desert").hide();
-    //   $("#warmKids").hide();
-    //   $("#hot").show();
-    // } else if (age < 15 && environment === "warm") {
-    //   $("#dangerNoKids").hide();
-    //   $("#winter").show();
-    //   $("#coolKids").show();
-    //   $("#desert").hide();
-    //   $("#warmKids").hide();
-    //   $("#hot").hide();
-    // } else if (age < 15 && environment === "dessert") {
-    //   $("#dangerNoKids").hide();
-    //   $("#winter").show();
-    //   $("#coolKids").show();
-    //   $("#desert").hide();
-    //   $("#warmKids").hide();
-    //   $("#hot").hide();
-    // // }
       console.log("age: "+ activity);
       console.log("out of if: "+ activity);
       console.log(environment);
