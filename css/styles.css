@@ -9,7 +9,8 @@ h4 {
 .jumbotron {
   padding: .05%;
   border-radius: 0 !important;
-  background-color: #eee;
+  /*background-color: 35% #f7f7ee;*/
+  background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
 }
 .space {
   margin: 20px;
@@ -30,4 +31,21 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
+}
+img {
+  clear: both;
+  float: center;
+  margin: -200px;
+  padding: -100px;
+  margin-left: 400px;
+  max-width: 300%;
+  max-height: 400%;
+  object-fit: contain;
+}
+.margin-in {
+  margin: -20px;
+  padding: -10px;
+}
+body {
+  background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
 }
