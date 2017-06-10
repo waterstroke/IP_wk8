@@ -9,6 +9,7 @@ $(document).ready(function() {
     var kids = $("select#kids").val();
     var email = $("select#email").val();
 
+
     if (environment === "winter" && activity === "skiing") {
       $("#coolKids").hide();
       $("#dangerNoKids").hide();
@@ -78,11 +79,16 @@ $(document).ready(function() {
     }
     if (email === "yes") {
       $("#vacationWinner").show();
+      $ ("#emailName").show();
     } else {
       $("#vacationWinner").hide();
+      $ ("#emailName").hide();
     }
+  $("form#emailName").submit(function(event) {
+    var emailInput = $("input#email")
+  });
 
-    $(".name").text(name);
+
 
       console.log("age: "+ activity);
       console.log("out of if: "+ activity);
