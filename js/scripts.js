@@ -8,6 +8,7 @@ $(document).ready(function() {
     var food = $("select#food").val();
     var kids = $("select#kids").val();
     var email = $("select#email").val();
+    var emailInput = $("input#emailAdd").val();
 
 
     if (environment === "winter" && activity === "skiing") {
@@ -84,23 +85,27 @@ $(document).ready(function() {
       $("#vacationWinner").hide();
       $ ("#emailName").hide();
     }
-  $("form#emailName").submit(function(event) {
-    var emailInput = $("input#email")
-  });
-
-$(".name").text(name);
-
-      console.log("age: "+ activity);
-      console.log("out of if: "+ activity);
-      console.log(environment);
-      console.log(food);
-      console.log(kids);
-      console.log(name);
-      console.log(adventure);
-      console.log(activity);
-      console.log(age);
-
-
+    if (name == null || name == "") {
+       alert("You left the name field empty, Enter your name to Continue!");
+       $("#vacationWinner").hide();
+       $ ("#emailName").hide();
+       $("#dangerNoKids").hide();
+       $("#winter").hide();
+       $("#coolKids").hide();
+       $("#desert").hide();
+       $("#warmKids").hide();
+       $("#hot").hide();
+       return false;
+    }
+    $(".name").text(name); //This isnt working
     event.preventDefault();
   });
-});
+
+  $("form#emailName").submit(function(event) {
+    var emailInput = $("input#emailAdd").val();
+
+    $(".emailAddress").text(emailInput); //doesnt work
+    $("#emailSub").show(); //This isnt working
+    event.preventDefault();
+    });
+  });

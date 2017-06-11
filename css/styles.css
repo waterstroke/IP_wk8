@@ -15,7 +15,7 @@ h4 {
   margin: 20px;
   padding-top: 2px;
 }
-#vacationWinner, #emailName {
+#vacationWinner, #emailName, #emailSub {
     display: none;
 }
 #dangerNoKids,#warmKids,#winter,#coolKids,#desert,#hot {
