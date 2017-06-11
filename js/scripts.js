@@ -88,7 +88,7 @@ $(document).ready(function() {
     var emailInput = $("input#email")
   });
 
-
+$(".name").text(name);
 
       console.log("age: "+ activity);
       console.log("out of if: "+ activity);
