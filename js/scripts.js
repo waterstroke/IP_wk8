@@ -105,7 +105,9 @@ $(document).ready(function() {
     var emailInput = $("input#emailAdd").val();
 
     $(".emailAddress").text(emailInput); //doesnt work
-    $("#emailSub").show(); //This isnt working
+    $('#emailSub').show('alert');
+    // alert(email).show();
+    // $("#emailSub").show(); //This isnt working
     event.preventDefault();
-    });
   });
+});
