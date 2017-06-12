@@ -106,8 +106,10 @@ $(document).ready(function() {
 
     $(".emailAddress").text(emailInput); //doesnt work
     $('#emailSub').show('alert');
+      alert("Please verify your submition email, press ok to Verify: " + emailInput);
     // alert(email).show();
-    // $("#emailSub").show(); //This isnt working
+    //Couldnt figure out how to make the alert a popup window
+    //rather than a slide. above the email.
     event.preventDefault();
   });
 });
